@@ -3,6 +3,10 @@
 # Space complexity: O (m) where m is the smaller of the two arrays input into the intersection method.
 
 def intersection(array1, array2)
+  if array1 == nil || array2 == nil
+    return []
+  end
+
   array1.sort!
   array2.sort!
 
